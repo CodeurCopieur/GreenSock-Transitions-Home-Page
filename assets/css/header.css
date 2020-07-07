@@ -1,0 +1,7 @@
+body header {
+  width: 100vw;
+  min-height: 100vh;
+  background: url("../images/ny.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative; }
