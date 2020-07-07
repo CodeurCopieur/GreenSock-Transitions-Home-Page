@@ -5,11 +5,41 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Home Page GreenSock Transitions
 
+    //fonts
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Abril+Fatface")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Aleo")
+
+    //stylesheet
     link(rel="stylesheet", href="assets/css/index.css")
     link(rel="stylesheet", href="assets/css/header.css")
+
+    //font-awesome
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+
+    //greensock
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js")
+
   body
     header
+      h1 Codwerk, Votre Agence Web
       .gauche
         h2 Agence
       .droite
         h2 CODWERK
+      
+      nav.navbar
+        ul
+          li Accueil
+          li Notre team
+          li L'agence
+          li Nos projets
+          li Contact
+      
+      nav.navbar-social
+        ul
+          each val in ['fa-instagram', 'fa-github', 'fa-github']
+            li 
+              i.fa(class=val)
+
+    
+    script(src="./assets/js/index.js")
