@@ -5,3 +5,83 @@ body header {
   background-size: cover;
   overflow: hidden;
   position: relative; }
+
+body header .gauche h2, body header .droite h2 {
+  font-size: 90px;
+  font-weight: bolder;
+  letter-spacing: 12px;
+  background: #fff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+body header h1 {
+  position: absolute;
+  background: url();
+  left: 50%;
+  top: 50%;
+  font-family: 'aleo';
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: 900;
+  background: #fff; }
+
+body header .gauche {
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  background: url("../images/bgdashed.jpg");
+  left: 0;
+  top: 0; }
+
+body header .droite {
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  background: url("../images/bgdashed2.jpg");
+  right: 0;
+  top: 0; }
+
+body header .navbar {
+  padding: 20px 0; }
+  body header .navbar ul {
+    color: #fff;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    body header .navbar ul li {
+      font-size: 35px;
+      font-family: 'Abril Fatface';
+      font-weight: 900;
+      margin: 0 25px;
+      text-align: center;
+      cursor: pointer; }
+
+body header .navbar-social {
+  position: absolute;
+  background: url();
+  left: 0%;
+  top: 30%; }
+  body header .navbar-social ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 20px; }
+    body header .navbar-social ul li {
+      margin-bottom: 50px;
+      font-size: 30px;
+      cursor: pointer; }

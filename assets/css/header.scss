@@ -7,10 +7,91 @@
   position: relative;
 }
 
+%headerTitle {
+  font-size: 90px;
+  font-weight: bolder;
+  letter-spacing: 12px;
+  background: #fff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin plcmnt($position, $width, $height, $url, $rigth, $left,$top) {
+  position: $position;
+  width: $width;
+  height: $height;
+  background: url($url);
+  right: $rigth;
+  left: $left;
+  top: $top;
+}
+
+
 body {
 
 
   header {
     @extend %styleHeader;
+
+    h1 {
+      @include plcmnt(absolute, null, null, null, null, 50%, 50%);
+      font-family: 'aleo';
+      transform: translate(-50%, -50%);
+      font-size: 50px;
+      font-weight: 900;
+      background: #fff;
+    }
+
+    .gauche {
+      @include plcmnt(absolute, 50%, 100vh, '../images/bgdashed.jpg', null, 0, 0);
+
+      h2 {
+        @extend %headerTitle;
+      }
+    }
+
+    .droite {
+      @include plcmnt(absolute, 50%, 100vh, '../images/bgdashed2.jpg', 0, null, 0);
+
+      h2 {
+        @extend %headerTitle;
+      }
+    }
+
+    .navbar {
+      padding: 20px 0;
+      ul {
+        color: #fff;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+
+        li {
+          font-size: 35px;
+          font-family: 'Abril Fatface';
+          font-weight: 900;
+          margin: 0 25px;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .navbar-social {
+      @include plcmnt(absolute, null, null, null, null, 0%, 30%);
+      ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        li {
+          margin-bottom: 50px;
+          font-size: 30px;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
